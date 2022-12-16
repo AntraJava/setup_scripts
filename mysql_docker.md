@@ -1,9 +1,9 @@
 # mysql
 docker run --name=mysql_new -d -p 3306:3306 mysql/mysql-server:8.0
 * Get password
-  `docker logs mysql_new 2>&1 | grep GENERATED`
+  `docker logs mysql_sep 2>&1 | grep GENERATED`
 * copy the password from the output
-* Login `docker exec -it mysql_new mysql -uroot -p`
+* Login `docker exec -it mysql_sep mysql -uroot -p`
 * Paste the password. (when you paste it, it won't show on the screen, make sure you copy/paste it right)
 * Now you are in the mysql cli like this:`mysql>`
 * **Don't forget the semicolon ";" when you copy the SQL queries below;**
