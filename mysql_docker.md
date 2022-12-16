@@ -1,5 +1,5 @@
 # mysql
-docker run --name=mysql_new -d -p 3306:3306 mysql/mysql-server:8.0
+docker run --name=mysql_sep -d -p 3306:3306 mysql/mysql-server:8.0
 * Get password
   `docker logs mysql_sep 2>&1 | grep GENERATED`
 * copy the password from the output
